@@ -1,0 +1,524 @@
+
+
+*{
+	font-family:Castellar;
+	margin: auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	overflow-x: hidden;
+    background: #fff;
+    min-height:100vh;
+}
+
+/*........ADD HEADER CSS..........*/
+#header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding:30px 100px;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	z-index:10000;
+}
+#header .Logo
+{
+	color:#094b65;
+	font-weight:700;
+	font-size:2em;
+	text-decoration: none;
+}
+#header ul
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#header ul li
+{
+	list-style:none;
+	margin-left: 20px;
+}
+#header ul li a
+{
+	text-decoration: none;
+	padding:6px 15px;
+	color: #094b65;
+	border-radius: 20px;
+}
+#header ul li a:hover,
+#header ul li a.active
+{
+	background: #094b65;
+	color: #fff;
+}
+
+
+
+
+
+
+
+/*main part of welcome page*/
+body{
+	background-image:url('WelcomeImages/2.png'); 
+}
+
+section
+{
+	position: relative;
+	width: 100%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section::before
+{
+	content: '';
+	position: absolute;
+	bottom: -300;
+	left: 0;
+	width: 100%;
+	height:20%;
+	background: linear-gradient(to top,#094b65,transparent);
+	z-index: 10;
+
+}
+
+section img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+section #text
+{
+	position: absolute;
+	color: #094b65;
+	font-size: 15vw;
+	text-align: center;
+	line-height: 0.5em;
+	font-family: 'Rancho',cursive;
+	transform: translateY(-250px);
+}
+
+section #text span
+{
+	font-size: 0.30em;
+	letter-spacing: 2px;
+	font-weight: 400;
+	/*font-family: 'Poppins', sans-serif;*/
+	font-family: 'Rancho',cursive;
+}
+
+/*for image1*/
+.img1
+{
+	padding-left: 200px;
+	padding-bottom: 5px;
+	padding-top: 200px;
+	
+
+}
+
+/*for explore botton*/
+#btn
+{
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 30px;
+	background: #f8c351;
+	color: #094b65;
+	font-weight: 500;
+	letter-spacing: 2px;
+	border-radius: 40px;
+	transform: translateY(250px);
+	font-family: Rockwell Extra Bold ReRegular;
+	
+}
+#btn{
+	display:inline-block;
+	background:#fff;
+	color: #094b65;
+	font-size: 1.3em;
+	font-weight:bold;
+	padding:10px 60px;
+	margin:30px 0;
+	border-radius:50px;
+	transition:background 0.2s;
+}
+#btn:hover{
+	background:#19f8f0;
+}
+
+.sec{
+	background-color: #094b65;
+    padding: 100px;
+	position: relative;
+	margin-top:300px;
+	height: 900px;
+	
+
+}
+.sec h2
+{
+	font-size: 3.5em;
+	color:#f989d3;
+	margin-bottom: 10px;
+	margin-top: 85px;
+	font-family: Matura MT Script Capitals;
+	text-align:center;
+	margin:0 auto 80px;
+	position:relative;
+	line-height:60px;
+
+}
+
+.sec h2::after{
+	content:'';
+	background:#ff523b;
+	width:1000px;
+	height:5px;
+	border-radius:50px;
+	position:absolute;
+	bottom:0;
+	left:6%;
+	transform:translateY(30px);
+	
+
+}
+
+.bg p{
+	background-image:url('WelcomeImages/31.jpg');
+	background-size:470px
+	
+}
+
+.sec p{
+	flex-basis:50%;
+	min-width:300px;
+	margin:0 auto 80px;
+	position:relative;
+	line-height: 1.2em;
+	font-size: 2.3vw;
+	color:#094b65;
+	padding-left:150px;
+	padding-right:150px;
+	font-family:Castellar;
+	font-weight: bolder;
+
+}
+
+
+/*for stay safe stay home order online animation */
+.note{
+	background-color:#094b65;
+	padding-bottom:20px;
+	padding-top:30px;
+	width: 1400px;
+    height: 200px;
+    animation-name: example;
+    animation-duration: 10s;
+	animation-iteration-count:1000;
+	
+}
+@keyframes example {
+  0%   {background-color: black;}
+  25%  {background-color: #99ccff;}
+  50%  {background-color:black;}
+  100% {background-color: #99ccff;}
+}
+.note h1 {
+	color:#094b65;
+	flex-basis:50%;
+	min-width:400px;
+	padding-right:90px;
+	font-size: 2.5em;
+	
+}
+
+/*for bird image animation*/
+@-webkit-keyframes mymove 
+{
+    100%   {top:200px;}
+    25%  {top:200px;}
+    50%  {left:100px;}
+    75%  {left:250px;}
+    100% {top:0px;}
+}
+
+#img4 {
+    position:absolute;
+	-webkit-animation: mymove 7s infinite;}
+
+#img5{
+    position:absolute;
+	-webkit-animation: mymove 5s infinite;}
+
+#img11{
+    position:absolute;
+	-webkit-animation: mymove 10s infinite;}
+
+
+
+/*for alert message-box*/
+.alert {
+  padding: 10px;
+  background-color:black;
+  color: black;
+  font-size: 2.4em;
+  font-family:arial black;
+
+}
+
+.closebtn {
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 55px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.3;
+ 
+}
+
+.closebtn:hover {
+  color: #44fc30;
+
+}
+
+/*for end*/
+.end {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: ;
+  background-size: contain;
+  background-position: top center;
+  background-repeat: repeat; 
+  transform:translateY(90px);
+  font-family: Goudy Stout;
+}
+
+.end  span {
+  display: block;
+  color: #dddddd;
+  font-family: sans-serif;
+
+}
+
+.end  span  a {
+  color: steelblue;
+  text-decoration: none;
+}
+
+.end > .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 200%;
+  font-family: Goudy Stout;
+  color:#094b65;
+}
+
+.end > .social-media {
+	margin-bottom: 10px; 
+}
+
+.end > .social-media  a {
+  padding: 0 5px;
+  font-size: 38px;
+  color:#094b65;
+}
+
+
+.end > .quick-access  a {
+  border-right: 1px solid ;
+  padding: 0 1em;
+  font-size: 60%;
+  
+}
+
+.end > .quick-access  a:last-child {
+	border: 0; 
+}
+
+.end p{
+  color:#094b65;
+  transform:translateY(26px);
+  font-size:25px;
+  font-family:Goudy Stout;
+}
+
+
+/*for add glow*/
+.glow {
+
+	color: #fff;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.note h1 {
+
+	animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes note h1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+
+.mix{
+	height:15px;
+}
+
+.last{
+	width:1400px;
+	padding-left:-30px;
+	margin:auto;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: pink;
+  font-weight: bold;
+  font-size: 38px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 30px 0 0 30px;
+  color:red;
+}
+.prev {
+  left: 0;
+  border-radius: 0 30px 30px 0;
+  color:red;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+	
+/*.......ADD FOOTER CSS........*/
+
+
+
+
+
+
+
+
+
+
+
+
+

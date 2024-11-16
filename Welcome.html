@@ -1,0 +1,192 @@
+
+<DOCTYPE html>
+<html>
+	<head>
+		<title>EASYME Welcome Page</title>
+		<link rel="stylesheet" type="text/css" href="style2(welcomepage).css">
+	</head>
+	
+	<body>
+		
+		
+			<!--*******ADD HEADER HTML CODING*********-->
+		<header id="header">
+			<a href="#" class="LogO">EASYME</a>
+			<ul>
+				<li><a href="#"> Home </a></li>
+				<li><a href="#" class="active"> Welcome </a></li>
+				<li><a href="Product.html"> Product </a></li>
+				<li><a href="#"> About </a></li>
+				<li><a href="#"> Contect </a></li>
+			</ul>
+		</header>
+
+
+
+		
+	<div class="last">
+	
+		<div class="img1">
+		<img src="WelcomeImages/1.png" align="center" width="1000px" height="285px">
+		</div>
+		
+		<marquee behavior="scroll" direction="right" scrollamount = "35">
+			<img src="WelcomeImages/29.gif" width="240"/>
+		</marquee>
+		
+		<section>
+			<h2 id="text"><span> It's time for a new </span><br> Shopping </h2><br>
+			<img src="WelcomeImages/4.png" id="img4">
+			<img src="WelcomeImages/5.png" id="img5">
+			<img src="WelcomeImages/11.png" id="img11">
+			<img src="WelcomeImages/6.png" id="img6">
+			<a href="Product.html" id="btn"> Explore </a>
+			<img src="WelcomeImages/7.png" id="img7">
+			<img src="WelcomeImages/9.png" id="img9">
+			<img src="WelcomeImages/8.png" id="img8">
+		</section>
+		
+		<div class="sec">
+			
+			<h2>Any Variation That Fits Your Imagination</h2><br>
+			
+			<div class="alert">
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong class="glow">Congratulations....!&#127881;&#127881;<h3>Now you are member of EASYME &#129309;&#128522;<h3></strong> 
+			</div>
+			
+			<div class="bg">
+			<p><br><b>&#128420;Hi...! Welcome to EASYME webpage and thank you for becomeing a member with EASYME.
+			We are excited to start this journy with you.EASYME is the leading online marketplace in South Asia ,empowering 
+			thens of thousands of sellers to connect with millions of costomers.<br><br>&#128420;EASYME main branch in Srilanka.
+			We have ten years history.Find your perfect outfit that will suit for you.Success isn't always about greateness.
+			It's about consistent hard work gains success.Greateness Will Come.You can get any disire things via online ordaring.
+			It will helpfull to stop covid-19 spreading.</b><br><br></p></div>
+		</div>
+		
+		<div>
+		<marquee behavior="scroll" direction="left" scrollamount = "15" bgcolor="#094b65">
+		<img src="WelcomeImages/10.gif" width="420px">
+		</marquee>
+		</div><br><br>
+		
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 6</div>
+		  <img src="WelcomeImages/35.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 6</div>
+		  <img src="WelcomeImages/36.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 6</div>
+		  <img src="WelcomeImages/37.jpg" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 6</div>
+		  <img src="WelcomeImages/38.jpg" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">5 / 6</div>
+		  <img src="WelcomeImages/39.jpg" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">6 / 6</div>
+		  <img src="WelcomeImages/40.jpg" style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span>
+		  	<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span> 
+			<span class="dot" onclick="currentSlide(6)"></span> 
+		</div>
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+		
+		<div class="note">
+		<marquee behavior="alternate" direction="left" scrollamount = "15">
+		<h1><i>&#128157;Stay Safe &#128157;</i> </h1> </marquee> 
+		<marquee behavior="alternate" direction="left" scrollamount = "10">
+		<h1><i>&#127968;Stay Home&#127968; </i></h1> </marquee>
+		<marquee behavior="alternate" direction="left" scrollamount = "18">
+		<h1><i>&#128241;Order Online&#128241;</i></h1> </marquee>
+		</div>
+		
+		<div class="mix">
+			<marquee behavior="alternate" direction="left" >
+				<img src="WelcomeImages/12.jpg" width="300"/>
+				<img src="WelcomeImages/13.jpg" width="300"/>
+				<img src="WelcomeImages/14.jpeg" width="218"/>
+				<img src="WelcomeImages/15.jpg" width="300"/>
+				<img src="WelcomeImages/16.jpg" width="300"/>
+				<img src="WelcomeImages/17.jpg" width="300"/>
+				<img src="WelcomeImages/18.jpeg" width="550"/>
+				<img src="WelcomeImages/19.jpg" width="300"/>
+				<img src="WelcomeImages/20.jpg" width="300"/>
+				<img src="WelcomeImages/21.jpg" width="660"/>
+				<img src="WelcomeImages/22.jpg" width="300"/>
+				<img src="WelcomeImages/23.jpg" width="300"/>
+				<img src="WelcomeImages/24.jpg" width="300"/>
+				<img src="WelcomeImages/25.jpg" width="300"/>
+				<img src="WelcomeImages/26.jpg" width="300"/>
+				<img src="WelcomeImages/27.jpg" width="435"/>
+				<img src="WelcomeImages/28.jpeg" width="229"/>
+			</marquee>
+		</div>	
+		
+		<h2><div class="end">
+			<img src="WelcomeImages/30.gif" width="300px">
+			<span class="name"><t>&#128664;EASYME HOME DELIVERY&#128667;<t></span>
+			<p>&#127968;Stay home&#127968;<br><br> &#128151;stay safe&#128151;</p><br><br></h2>
+		</div><br><br>
+		
+		<!--********ADD FOOTER CODING*********-->
+		
+		
+		
+	</div>
+	</body>
+</html>
